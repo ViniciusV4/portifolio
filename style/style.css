@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');; /*Aqui importei as fontes*/
+
+/* A tag "*" seleciona todos os elementos que a gente quiser na pagina, nesse momento vamos selecionar ela inteira. Usamos para definição do Box model.*/
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+:root {
+    --color-primary: #000000;
+    --color-secundary: #ffffff; 
+    --color-tertiary: #FF0000;
+    --color-hover: #2b2424;
+    --font-primary: 'Krona One', sans-serif;
+    --font-secundary: 'Montserrat', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-primary);
+    color: var(--color-secundary);
+}
+
+.top {
+    padding: 2% 0% 0% 11%;
+}
+
+.top__menu__link {
+font-family: var(--font-secundary);
+font-size: 1.5rem;
+font-weight: 600;
+text-decoration: none;
+color: var(--color-tertiary);
+}
+
+.top__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.profile {
+    margin: 4% 11%; /*primeiro valor pro vertical e segundo horizontal*/
+    display: flex;/*colocamos todos os elementos na mesma linha*/
+    align-items: center;
+    gap: 82px;
+}
+
+.featured-title {
+    color: var(--color-tertiary);
+}
+
+.profile__content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.profile__content__title {
+    font-size: 2rem;
+    font-family: var(--font-primary);
+}
+
+.profile__content__text {
+    font-size: 1.3rem;
+    font-family: var(--font-secundary);
+    font-weight: 400;
+    
+}
+
+.profile__link {
+    display: flex; /*Sempre começa com isso antes de dvidir*/
+    flex-direction: column;/* coloca as informações na vertical*/
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between; /*Separou os botões*/
+}
+
+.profile__link__caption{
+    font-family: var(--font-primary);
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--color-secundary);
+}
+
+.profile__link__style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-family: var(--font-secundary);
+    font-weight: 600;/*peso da fonte*/
+    font-size: 1rem;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;/*arredondamento da borda*/
+    color: var(--color-secundary);
+    border: 2px solid var(--color-tertiary);
+    padding: 15px 0px;/*primeiro valor pro vertical e segundo horizontal*/
+    text-decoration: none;/*tira linha de baixo das palavras*/
+}
+
+/*muda quando o mouse passar:*/
+.profile__link__style:hover {
+    background-color: var(--color-hover);
+    color: var(--color-tertiary);
+    font-size: large;
+}
+
+.baseboard {
+    font-family: var(--font-primary);
+    font-size: 1.3rem;
+    height: 400;
+    color: var(--color-primary);
+    background-color: var(--color-tertiary);
+    padding: 24px;
+    margin: 0;
+    text-align: center;
+}
+
+.profile__content__contact {
+    font-family: var(--font-primary);
+}
+
+.profile__image {
+    width: 50%;
+}
+
+.profile__content__expirience{
+    font-size: 18px;
+    font-family: var(--font-secundary);
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.top__menu__link:hover {
+    font-size: xx-large;
+}
+
+.profile__content__link {
+    display: flex;
+    gap: 25px;
+}
+
+@media (max-width: 1200px) {
+    .top {
+     padding: 2% 8%;
+    }
+    
+    .top__menu {
+        justify-content: center;
+        gap: 5%;
+        
+    }
+
+    .top__menu__link {
+        font-size: medium;
+    }
+
+    .profile {
+        flex-direction: column-reverse;
+        gap: 10%;
+        padding: 2%;
+        margin: 2%;
+    }
+
+    .profile__content {
+        width: auto;
+        
+    }
+
+    .profile__content__title {
+        font-size: x-large;
+    }
+
+    .profile__content__text {
+        font-size: medium;
+    }
+    .profile__link__caption {
+        font-size: medium;
+    }
+   
+    .profile__link__style {
+        gap: 2%;
+        font-size: 50%;
+        padding: 2%;
+    }
+
+    .profile__content__contact {
+        font-size: medium;
+    }
+
+    .profile__content__expirience {
+        font-size: medium;
+    }
+
+    .profile__content__link {
+        gap: 5%;
+    }
+
+    .baseboard {
+        font-size: x-small;
+    }
+}
+
