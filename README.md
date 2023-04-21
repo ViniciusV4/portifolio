@@ -1,7 +1,6 @@
+# Olá, Bem vindo ao meu projeto de portfólio.
 
-# Portfólio Olá, Bem vindo ao meu projeto de portfólio.
-
-![image](https://raw.githubusercontent.com/ViniciusV4/portifolio/main/assets/portifolio.png)
+![Imagem do Portifolio](https://raw.githubusercontent.com/ViniciusV4/portifolio/main/assets/portifolio.png)
 
 ## Ferramentas utilizadas:
 
