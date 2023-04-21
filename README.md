@@ -1,4 +1,3 @@
-```
 
 # Portfólio Olá, Bem vindo ao meu projeto de portfólio.
 
@@ -18,4 +17,3 @@
 
 ### Linkedin: https://www.linkedin.com/in/marcos-vinicius-moura-ferreira-383bb216a/
 
-```
