@@ -126,7 +126,7 @@ color: var(--color-tertiary);
 }
 
 .profile__content__expirience{
-    font-size: 18px;
+    font-size: 1.2rem;
     font-family: var(--font-secundary);
     font-weight: 400;
     display: flex;
@@ -143,9 +143,89 @@ color: var(--color-tertiary);
     gap: 25px;
 }
 
+.works {
+    margin: 5% 11%; 
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.portifolio {
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+  
+}
+
+.portifolio:hover {
+    background-color: var(--color-hover);
+}
+
+.portifolio__itens {
+    border: 2px solid var(--color-tertiary);
+    border-radius: 10px;
+    width: 170px;
+    height: 360px;
+}
+
+.portifolio__text {
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-primary);
+    font-size: 100%;
+    color: var(--color-secundary);
+}
+
+.portifolio__title {
+    display: flex;
+    justify-content:center ;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 10%;
+    font-family: var(--font-primary);
+    color: var(--color-tertiary);
+}
+
+.portifolio__title:hover {
+    font-size: large;
+}
+
+.portifolio__link {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--color-tertiary);
+    font-family: var(--font-secundary);
+}
+
+.portifolio__link:hover {
+    font-size: large;
+}
+
+.portifolio__img {
+    display: flex;
+    justify-content: center;
+}
+
+.c-loader {
+    animation: is-rotating 1s infinite;
+    border: 6px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: var(--color-tertiary);
+    height: 50px;
+    width: 50px;
+    margin: 60% 0 0 30%;
+  }
+  
+  @keyframes is-rotating {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
 @media (max-width: 1200px) {
     .top {
-     padding: 2% 8%;
+     padding: 2% 1%;
     }
     
     .top__menu {
@@ -155,7 +235,7 @@ color: var(--color-tertiary);
     }
 
     .top__menu__link {
-        font-size: medium;
+        font-size: small;
     }
 
     .profile {
@@ -167,7 +247,6 @@ color: var(--color-tertiary);
 
     .profile__content {
         width: auto;
-        
     }
 
     .profile__content__title {
@@ -176,6 +255,7 @@ color: var(--color-tertiary);
 
     .profile__content__text {
         font-size: medium;
+        justify-content: center;
     }
     .profile__link__caption {
         font-size: medium;
@@ -201,6 +281,16 @@ color: var(--color-tertiary);
 
     .baseboard {
         font-size: x-small;
+    }
+
+    .works {
+        flex-direction: column-reverse;
+        padding: 5%;
+        margin: 2%;
+    }
+
+    .portifolio {
+        margin-top: 3%;
     }
 }
 
