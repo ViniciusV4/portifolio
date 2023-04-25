@@ -98,6 +98,10 @@ color: var(--color-tertiary);
     text-decoration: none;
 }
 
+.style_qualifications {
+    padding: 20px 30px;
+}
+
 .profile__link__style:hover {
     background-color: var(--color-hover);
     color: var(--color-tertiary);
@@ -138,7 +142,7 @@ color: var(--color-tertiary);
 
 .profile__content__link {
     display: flex;
-    gap: 25px;
+    gap: 35px;
 }
 
 .works {
@@ -274,7 +278,9 @@ color: var(--color-tertiary);
     }
 
     .profile__content__link {
-        gap: 5%;
+        gap: 7px;
+        display: flex;
+        flex-direction: column;
     }
 
     .baseboard {
