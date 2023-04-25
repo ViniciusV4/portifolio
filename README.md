@@ -16,6 +16,8 @@
 
 * Flex-box
 
+* Responsive Web Design
+
 ## Feito por:
 
 ### Marcos Vinicius
