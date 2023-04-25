@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');; /*Aqui importei as fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');; 
 
-/* A tag "*" seleciona todos os elementos que a gente quiser na pagina, nesse momento vamos selecionar ela inteira. Usamos para definição do Box model.*/
 * {
     margin: 0;
     padding: 0; 
@@ -39,8 +38,8 @@ color: var(--color-tertiary);
 }
 
 .profile {
-    margin: 4% 11%; /*primeiro valor pro vertical e segundo horizontal*/
-    display: flex;/*colocamos todos os elementos na mesma linha*/
+    margin: 4% 11%; 
+    display: flex;
     align-items: center;
     gap: 82px;
 }
@@ -68,11 +67,11 @@ color: var(--color-tertiary);
 }
 
 .profile__link {
-    display: flex; /*Sempre começa com isso antes de dvidir*/
-    flex-direction: column;/* coloca as informações na vertical*/
+    display: flex; 
+    flex-direction: column;
     align-items: center;
     gap: 16px;
-    justify-content: space-between; /*Separou os botões*/
+    justify-content: space-between; 
 }
 
 .profile__link__caption{
@@ -88,18 +87,17 @@ color: var(--color-tertiary);
     align-items: center;
     gap: 16px;
     font-family: var(--font-secundary);
-    font-weight: 600;/*peso da fonte*/
+    font-weight: 600;
     font-size: 1rem;
     width: 50%;
     text-align: center;
-    border-radius: 8px;/*arredondamento da borda*/
+    border-radius: 8px;
     color: var(--color-secundary);
     border: 2px solid var(--color-tertiary);
-    padding: 15px 0px;/*primeiro valor pro vertical e segundo horizontal*/
-    text-decoration: none;/*tira linha de baixo das palavras*/
+    padding: 15px 0px;
+    text-decoration: none;
 }
 
-/*muda quando o mouse passar:*/
 .profile__link__style:hover {
     background-color: var(--color-hover);
     color: var(--color-tertiary);
@@ -217,7 +215,7 @@ color: var(--color-tertiary);
     margin: 60% 0 0 30%;
   }
   
-  @keyframes is-rotating {
+@keyframes is-rotating {
     to {
       transform: rotate(1turn);
     }
